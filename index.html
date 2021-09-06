@@ -5,20 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Audio Player</title>
   </head>
   <body>
-    <div class="player">
-      <canvas></canvas>
-      <div class="player-area">
-        <button id="perv-song" onclick={handleClick}>prev song</button>
-        <button id="play-song">Play</button>
-        <button id="pause-song">Pause</button>
-        <button id="next-song">next song</button>
-       
-        
+    <div id="container">
+      <canvas id="canvas1"></canvas>
+
+      <audio id="audio1"></audio>
+      <div class="music_controls">
+        <button class="volume">
+          <i class="fas fa-volume-up" title="volume"> </i>
+        </button>
+        <button class="play">
+          <i class="fas fa-play main_button" id="play" title="play"> </i>
+        </button>
+        <button class="next">
+          <i class="fas fa-forward" title="Next"> </i>
+        </button>
       </div>
     </div>
+
+    <script src="data.json"></script>
+    <script src="./audio.js"></script>
   </body>
-  <script src="./audio.js"></script>
 </html>

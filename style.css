@@ -1,8 +1,34 @@
-body {
-  padding: 0px;
-  margin: 0px;
+#container {
+  text-align: center;
 }
 
-.player-area {
-  text-align: center;
+.music_controls {
+  width: 15rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.music_controls .fas {
+  color: #1e7ce9;
+  cursor: pointer;
+}
+
+button {
+  background-color: white;
+}
+
+.next,
+.volume {
+  width: 80px;
+  height: 30px;
+  border-radius: 45px;
+}
+
+.play {
+  font-size: 40px;
+  width: 90px;
+  height: 65px;
+  border-radius: 45px;
 }
